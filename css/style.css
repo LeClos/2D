@@ -38,7 +38,7 @@ html {
 
 #demo {
   position: relative;
-  color: #FFF;
+  color: rgb(190, 0, 190);
   font-size: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 2px 2px #000000;
@@ -54,7 +54,7 @@ html {
 
 .clear i {
   font-size: 30px;
-  color: #FFF;
+  color: rgb(255, 0, 255);
 }
 
 .clear i:hover {
@@ -67,7 +67,7 @@ html {
 
 /* content */
 .content {
-  background-color: #FFF;
+  background-color: rgb(255, 239, 255);
   min-height: 65vh;
   overflow: auto;
 }
@@ -86,6 +86,7 @@ html {
 
 .item {
   width: 100%;
+  background-color: rgb(252, 240, 252);
   height: 45px;
   min-height: 45px;
   position: relative;
@@ -115,7 +116,7 @@ html {
   font-size: 20px;
   left: 50px;
   top: 5px;
-  background-color: #FFF;
+  background-color: rgb(252, 240, 252);
   max-width: 285px;
 }
 

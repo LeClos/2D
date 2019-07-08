@@ -149,6 +149,12 @@ function removeToDo(element) {
 }
 
 
+for (i = 0; i < LIST.length; i++) {
+  if (LIST[i.id]) {
+
+  }
+}
+
 // Targeting the right sections
 list.addEventListener("click", function (event) {
   const element = event.target; // Return the clicked element inside the list
@@ -156,9 +162,12 @@ list.addEventListener("click", function (event) {
 
   if (elementJob == "complete") {
     completeToDo(element);
+
   } else if (elementJob == "delete") {
     removeToDo(element);
   }
+
+
   // add to storage (This code must be put everywhere the array 'LIST' is update)
   localStorage.setItem("TODO", JSON.stringify(LIST));
 });
