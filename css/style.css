@@ -7,9 +7,8 @@ html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #161616;
+  background-color: #ffffff;
   overflow: auto;
-  overflow-y: hidden;
 }
 
 /*top image/hero text */
