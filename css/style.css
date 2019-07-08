@@ -1,16 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #161616;
-  overflow-x: hidden;
+  overflow: auto;
+  overflow-y: hidden;
 }
 
 /*top image/hero text */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/comp.jpg");
-  height: 30%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/bg1.jpg");
+  min-height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,12 +34,11 @@ html {
 
 .hero-text h1 {
   font-size: 55px;
+  text-shadow: 2px 4px #000000;
 }
 
 #demo {
   position: relative;
-  bottom: 10px;
-  left: 10px;
   color: #FFF;
   font-size: 30px;
   font-family: 'Lobster', cursive;
@@ -65,7 +69,7 @@ html {
 /* content */
 .content {
   background-color: #FFF;
-  height: 65%;
+  min-height: 65vh;
   overflow: auto;
 }
 
@@ -86,10 +90,10 @@ html {
   height: 45px;
   min-height: 45px;
   position: relative;
+  font-weight: bold;
   border-bottom: 1px solid rgba(137, 0, 150, 0.13);
   list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-top: 20px;
 }
 
 .item i.co {
@@ -133,11 +137,11 @@ html {
 .add-to-do {
   position: relative;
   width: 100%;
-  height: 5%;
+  min-height: 5vh;
   padding-left: 10px;
   background-color: #FFF;
-
   border-top: 1px solid rgba(137, 0, 150, 0.13);
+  z-index: 99;
 }
 
 .add-to-do i {
@@ -149,7 +153,7 @@ html {
 .add-to-do input {
   position: absolute;
   left: 50px;
-  height: 35px;
+  min-height: 5vh;
   width: 310px;
   background-color: transparent;
   border: none;
@@ -193,4 +197,43 @@ html {
 .lineThrough {
   text-decoration: line-through;
   color: #ccc;
+}
+
+/* media queries */
+@media only screen and (min-width: 1200px) {
+  .item i.de {
+    position: relative;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  .hero-text h1 {
+    font-size: 40px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+  #demo {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-height: 710px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 12px;
+  }
+
+  #demo {
+    font-size: 20px;
+  }
+
+  .add-to-do i {
+    font-size: 30px;
+  }
 }
