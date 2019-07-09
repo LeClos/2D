@@ -38,7 +38,7 @@ html {
 
 #demo {
   position: relative;
-  color: rgb(133, 0, 133);
+  color: rgb(255, 245, 255);
   font-size: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 2px 2px #000000;
@@ -230,7 +230,7 @@ html {
   }
 
   #mybtn {
-    max-width: 100px;
+    max-width: 98px;
     font-size: 10px;
   }
 
@@ -251,5 +251,10 @@ html {
 
   .add-to-do i {
     font-size: 30px;
+  }
+
+  #mybtn {
+    max-width: 84px;
+    font-size: 8px;
   }
 }
