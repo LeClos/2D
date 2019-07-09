@@ -38,7 +38,7 @@ html {
 
 #demo {
   position: relative;
-  color: rgb(190, 0, 190);
+  color: rgb(133, 0, 133);
   font-size: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 2px 2px #000000;
@@ -48,13 +48,14 @@ html {
   width: 30px;
   height: 30px;
   position: relative;
-  left: 10px;
-  top: 10px;
+  display: inline-block;
+  left: 5px;
+  top: 5px;
 }
 
 .clear i {
   font-size: 30px;
-  color: rgb(255, 0, 255);
+  color: rgb(255, 255, 255);
 }
 
 .clear i:hover {
@@ -67,7 +68,7 @@ html {
 
 /* content */
 .content {
-  background-color: rgb(255, 239, 255);
+  background-color: rgb(255, 248, 255);
   min-height: 65vh;
   overflow: auto;
 }
@@ -86,12 +87,12 @@ html {
 
 .item {
   width: 100%;
-  background-color: rgb(252, 240, 252);
+  background-color: rgb(255, 248, 255);
   height: 45px;
   min-height: 45px;
   position: relative;
   font-weight: bold;
-  border-bottom: 1px solid rgba(137, 0, 150, 0.13);
+  border-bottom: 1px solid rgba(182, 0, 199, 0.226);
   list-style: none;
   margin-top: 20px;
 }
@@ -116,7 +117,7 @@ html {
   font-size: 20px;
   left: 50px;
   top: 5px;
-  background-color: rgb(252, 240, 252);
+  background-color: rgb(255, 248, 255);
   max-width: 285px;
 }
 
@@ -204,6 +205,15 @@ html {
   .item i.de {
     position: relative;
   }
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  #mybtn {
+    max-width: 115px;
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-height: 850px) {
@@ -218,6 +228,12 @@ html {
   #demo {
     font-size: 24px;
   }
+
+  #mybtn {
+    max-width: 100px;
+    font-size: 10px;
+  }
+
 }
 
 @media only screen and (max-height: 710px) {
