@@ -205,8 +205,6 @@ html {
   .item i.de {
     position: relative;
   }
-
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -233,7 +231,6 @@ html {
     max-width: 98px;
     font-size: 10px;
   }
-
 }
 
 @media only screen and (max-height: 710px) {
