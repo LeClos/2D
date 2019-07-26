@@ -27,7 +27,6 @@ if (data) {
   id = 0;
 }
 
-
 // load items to the user's interface
 function loadList(array) {
   array.forEach(function (item) {
@@ -159,7 +158,6 @@ list.addEventListener("click", function (event) {
   } else if (elementJob == "delete") {
     removeToDo(element);
   }
-
 
   // add to storage (This code must be put everywhere the array 'LIST' is update)
   localStorage.setItem("TODO", JSON.stringify(LIST));

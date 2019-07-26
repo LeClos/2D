@@ -1,5 +1,8 @@
+$lightPurple: rgb(255, 248, 255);
+
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body,
 html {
@@ -7,7 +10,8 @@ html {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #ffffff;
-  overflow: auto; }
+  overflow: auto;
+}
 
 /*top image/hero text */
 .hero-image {
@@ -16,7 +20,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative; }
+  position: relative;
+}
 
 .hero-text {
   text-align: center;
@@ -25,18 +30,23 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 2px 2px #000000; }
+  text-shadow: 2px 2px #000000;
+}
 
-.hero-text h1 {
-  font-size: 55px;
-  text-shadow: 2px 4px #000000; }
+.hero-text {
+  h1 {
+    font-size: 55px;
+    text-shadow: 2px 4px #000000;
+  }
+}
 
 #demo {
   position: relative;
-  color: #fff5ff;
+  color: rgb(255, 245, 255);
   font-size: 30px;
   font-family: 'Lobster', cursive;
-  text-shadow: 2px 2px #000000; }
+  text-shadow: 2px 2px #000000;
+}
 
 .clear {
   width: 30px;
@@ -44,77 +54,100 @@ html {
   position: relative;
   display: inline-block;
   left: 5px;
-  top: 5px; }
+  top: 5px;
+}
 
-.clear i {
-  font-size: 30px;
-  color: #fff8ff; }
-.clear i:hover {
-  cursor: pointer;
-  text-shadow: 1px 3px 5px #000;
-  transform: rotate(45deg);
-  color: #8f00a1;
-  transition: 0.5s; }
+.clear {
+  i {
+    font-size: 30px;
+    color: $lightPurple;
+  }
+
+  i:hover {
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+    color: #8f00a1;
+    transition: 0.5s;
+  }
+}
 
 #mybtn {
   position: absolute;
   display: inline-block;
   right: 5px;
-  top: 5px; }
+  top: 5px;
+}
 
 /* content */
 .content {
-  background-color: #fff8ff;
+  background-color: $lightPurple;
   min-height: 65vh;
-  overflow: auto; }
+  overflow: auto;
+}
 
 #placeholder {
-  color: #929292;
+  color: rgb(146, 146, 146);
   position: relative;
   top: 20px;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .gone {
-  display: none; }
+  display: none;
+}
 
 .item {
   width: 100%;
-  background-color: #fff8ff;
+  background-color: $lightPurple;
   height: 45px;
   min-height: 45px;
   position: relative;
   font-weight: bold;
   border-bottom: 1px solid rgba(182, 0, 199, 0.226);
   list-style: none;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
-.item i.co {
-  position: absolute;
-  font-size: 25px;
-  padding-left: 5px;
-  left: 15px;
-  top: 10px; }
-.item i.co:hover {
-  cursor: pointer;
-  color: green; }
-.item p.text {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  font-size: 20px;
-  left: 50px;
-  top: 5px;
-  background-color: #fff8ff;
-  max-width: 285px; }
-.item i.de {
-  position: absolute;
-  font-size: 25px;
-  right: 15px;
-  top: 10px; }
-.item i.de:hover {
-  color: #af0000;
-  cursor: pointer; }
+.item {
+  i.co {
+    position: absolute;
+    font-size: 25px;
+    padding-left: 5px;
+    left: 15px;
+    top: 10px;
+  }
+
+  i.co:hover {
+    cursor: pointer;
+    color: green
+  }
+
+  p.text {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left: 50px;
+    top: 5px;
+    background-color: $lightPurple;
+    max-width: 285px;
+  }
+
+  i.de {
+    position: absolute;
+    font-size: 25px;
+    right: 15px;
+    top: 10px;
+  }
+
+  i.de:hover {
+    color: #af0000;
+    cursor: pointer;
+  }
+}
+
 
 /* addto */
 /* ------------ add item ------------ */
@@ -125,12 +158,15 @@ html {
   padding-left: 10px;
   background-color: #FFF;
   border-top: 1px solid rgba(137, 0, 150, 0.13);
-  z-index: 99; }
-  .add-to-do i {
+  z-index: 99;
+
+  i {
     position: absolute;
     font-size: 40px;
-    color: #8f00a1; }
-  .add-to-do input {
+    color: #8f00a1;
+  }
+
+  input {
     position: absolute;
     left: 50px;
     min-height: 5vh;
@@ -138,70 +174,108 @@ html {
     background-color: transparent;
     border: none;
     font-size: 20px;
-    padding-left: 10px; }
-  .add-to-do input::-webkit-input-placeholder {
+    padding-left: 10px;
+  }
+
+  input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
     color: #8e00a1;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px; }
-  .add-to-do input::-moz-placeholder {
+    font-size: 20px;
+  }
+
+  input::-moz-placeholder {
     /* Firefox 19+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px; }
-  .add-to-do input:-ms-input-placeholder {
+    font-size: 20px;
+  }
+
+  input:-ms-input-placeholder {
     /* IE 10+ */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px; }
-  .add-to-do input:-moz-placeholder {
+    font-size: 20px;
+  }
+
+  input:-moz-placeholder {
     /* Firefox 18- */
     color: #4162f6;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 20px; }
+    font-size: 20px;
+  }
+}
 
 /* classes */
 .fa-check-circle {
-  color: #6eb200; }
+  color: #6eb200;
+}
 
 .lineThrough {
   text-decoration: line-through;
-  color: #ccc; }
+  color: #ccc;
+}
 
 /* media queries */
 @media only screen and (min-width: 1200px) {
-  .item i.de {
-    position: relative; } }
+  .item {
+    i.de {
+      position: relative;
+    }
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   #mybtn {
     max-width: 115px;
-    font-size: 12px; } }
+    font-size: 12px;
+  }
+}
+
 @media only screen and (max-height: 850px) {
-  .hero-text h1 {
-    font-size: 40px; }
-  .hero-text p {
-    font-size: 14px; }
+  .hero-text {
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 
   #demo {
-    font-size: 24px; }
+    font-size: 24px;
+  }
 
   #mybtn {
     max-width: 98px;
-    font-size: 10px; } }
+    font-size: 10px;
+  }
+}
+
 @media only screen and (max-height: 710px) {
-  .hero-text h1 {
-    font-size: 30px; }
-  .hero-text p {
-    font-size: 12px; }
+  .hero-text {
+    h1 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
 
   #demo {
-    font-size: 20px; }
+    font-size: 20px;
+  }
 
-  .add-to-do i {
-    font-size: 30px; }
+  .add-to-do {
+    i {
+      font-size: 30px;
+    }
+  }
 
   #mybtn {
     max-width: 84px;
-    font-size: 8px; } }
-
-/*# sourceMappingURL=style.css.map */
+    font-size: 8px;
+  }
+}
